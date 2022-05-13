@@ -1,0 +1,18 @@
+// A Dockerfile is a text document which contains all the commands
+// that a user can call on the command line to assemble an image.
+
+// Dockerfile. You can use docker build to create an automated
+// build to execute several command-line instructions in succession.
+
+step 1: create a docker file
+> docker file is available in docker setup Dockerfile
+
+step 2: docker build image
+> sudo docker build -t ecom-webservice -f Dockerfile/ filepath
+> sudo docker build -t ecom-webservice .
+
+step 3: verify build images
+> sudo docker images
+
+step 4: start/ run container from custom docker image
+> sudo docker run --name ecom-webserver -p 8081:8081 -d ecom-webservice

@@ -1,0 +1,24 @@
+# start container
+> sudo docker container start <container-name>/<container-id>
+> sudo docker container start  000d01780033
+> sudo docker container start  sad_kowalevski
+
+# stop container
+> sudo docker container stop <container-name>/<container-id>
+> sudo docker container stop  000d01780033
+> sudo docker container stop  sad_kowalevski
+
+# restart container
+> sudo docker container restart <container-name>/<container-id>
+> sudo docker container restart  000d01780033
+> sudo docker container restart  sad_kowalevski
+
+# delete container( stop container can be deleted)
+> sudo docker container rm <container-name>/<container-id>
+> sudo docker container rm  000d01780033
+> sudo docker container rm  sad_kowalevski
+
+# forcefll delete container( delete a runningc ontainer can be deleted)
+> sudo docker container rm -f <container-name>/<container-id>
+> sudo docker container rm -f 000d01780033
+> sudo docker container rm -f sad_kowalevski

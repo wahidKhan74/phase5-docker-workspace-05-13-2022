@@ -1,0 +1,19 @@
+# verify docker version
+> sudo docker --version
+> sudo docker -v
+
+# verify docker info
+> sudo docker info
+
+# list docker containers
+sudo docker ps -a    -> Show all containers
+sudo docker container ls -a   -> Show all containers
+
+# list docker images
+sudo docker images
+
+# list docker volume
+sudo docker volume ls
+
+# pull docker image from docker hub
+> sudo docker pull ubuntu
