@@ -1,0 +1,32 @@
+# create a manager node as e2 instance.
+> 1. create ec2 instance
+> 2. connect ec2 instance 
+> 3. install docker
+
+#Initialize a docker cluster ( manager node) 
+> sudo docker swarm init   // Swarm initialized: current node (ocngmtggf4y01pnjrq77jhbzl) is now a manager.
+
+# verify nodes in cluster 
+> sudo docker node ls
+
+# create a worker node as ec2 instance.
+> 1. create ec2 instance
+> 2. connect ec2 instance 
+> 3. install docker
+
+#To add a worker to this swarm, run the following command:
+> sudo docker swarm join --token SWMTKN-1-3yatrvpddaf5duhldqjod0amv0ox6l91834c5kzeqcoe71jjcw-54w76vqvgdcsnft6cbahbuhfq 172.31.29.148:2377
+
+# verify nodes in cluster 
+> sudo docker node ls
+
+# john a manager node to docker swrm cluster
+>  sudo docker swarm join-token manager   -> then follow a set of intsructions.
+
+
+# list docker swarm service 
+sudo docker service ls
+
+# list  container for service
+sudo docker ps -a
+
